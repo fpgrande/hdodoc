@@ -4,7 +4,7 @@
 
 ## ¿Qué es HDO?
 
-El nombre HDO es el acrónimo formado por las iniciales de las palabras Harbour Data Objects ( Objetos de datos de Harbour ).
+El nombre HDO, es el acrónimo formado por las iniciales de las palabras: Harbour Data Objects ( Objetos de datos de Harbour ).
 
 HDO está formado por un conjunto de bibliotecas para Harbour que podemos enlazar con nuestros programas para conseguir acceder a los datos guardados en una base de datos. Además de gestionar completamente el acceso y el mantenimiento de la misma.
 
