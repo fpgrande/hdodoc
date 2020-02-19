@@ -2,9 +2,6 @@
 
 # HDO Documentación 
 
-[TOC]
-
-
 
 ## Clase TRowSet
 
