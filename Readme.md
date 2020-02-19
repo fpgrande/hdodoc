@@ -1,6 +1,7 @@
 
 # HDO Documentación 
-[TOC]
+
+
 ## ¿Qué es HDO?
 
 El nombre HDO es el acrónimo formado por las iniciales de las palabras Harbour Data Objects ( Objetos de datos de Harbour ).
