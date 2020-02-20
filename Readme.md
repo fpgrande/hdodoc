@@ -12,7 +12,7 @@ En la actualidad hay varias librerías que hacen eso en el universo Harbour. Ent
 
 Pues bien, hay varios motivos:
 
-* **HDO** es muy ligera. El código está hecho 100% en **Lenguaje C**.
+* **HDO** es muy ligera. El código está escrito 100% en **Lenguaje C**.
 
 * Super rápida. Accede directamente al *API* de cada gestor de Bases de datos, sin ninguna capa más, incluida la *Máquina Virtual de Harbour*.
 
