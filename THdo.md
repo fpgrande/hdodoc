@@ -102,3 +102,459 @@ oDb:connect( _DB, _CONN )
 #### execDirect()
 
 ##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### execScalar()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### prepare()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### query()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### rowset()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### lastInsertID()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### beginTransaction()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### commit()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### inTrasaction()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### rollback()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### setAttribute()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getAttribute()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### errorCode()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### errorNo()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### errorStr()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### escapeStr()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### ping()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### parse()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### throwException()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### throw()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### rdlInfo()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getHandle()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getRdlName()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getDbName()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getHost()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getUser()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getPassword()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getPort()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getUnixSocket()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getClientFlag()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### loadFromFile()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### listTables()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### xCreateTable()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
