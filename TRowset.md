@@ -288,3 +288,912 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 	oRowset:errorStr() // --> ""
 ```
 
+
+
+#### getAttribute()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### setAttribute()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### load()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### refresh()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### reload()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### free()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### goTop()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### goBottom()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### goTo()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### skip()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### skipper()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### fieldCount()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### fCount()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### fieldName()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### fieldType()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### fieldLen()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### fieldDec()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### fieldPos()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### fieldGet()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### recNo()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### recCount()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### lastRec()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### eof()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### bof()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### fieldNames()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### first()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### last()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### next()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### prior()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### moveBy()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### columnCount()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getColCount()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getMetaColumn()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getMetaField()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getColName()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getColType()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getColLen()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getColDec()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getColPos()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getValue()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getValueByName()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getValueByPos()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### fetchColumn()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### rowCount()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### rows()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### listColNames()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getListColNames()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### find()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### findNext()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### findString()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### findStringNext()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### setInsertStmt()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### setupDateStmt()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### setDeleteStmt()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### insert()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### update()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### delete()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### listValues()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getValues()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getValuesArray()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### getValuesHash()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### setFilter()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### clearFilter()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### throwException()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
+
+
+
+#### throw()
+
+##### Sintaxis:
+
+##### Argumentos:
+
+##### Devuelve:
+
+##### Descripción:
+
+##### Ejemplo:
