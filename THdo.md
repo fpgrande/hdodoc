@@ -558,3 +558,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+
+
+
+
+
+
