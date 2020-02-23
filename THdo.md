@@ -69,6 +69,39 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```Xbase
+local oDb
+local cTabla := "test"
+local cCreaTabla := "CREATE TABLE IF NOT EXISTS test ( "  + ;
+                                "id INTEGER PRIMARY KEY " + cAutoInc + ","  + ;
+                                "first    VARCHAR( 20 ),"     + ;
+                                "last     VARCHAR( 20 ),"     + ;
+                                "street   VARCHAR( 30 ),"     + ;
+                                "city     VARCHAR( 30 ),"     + ;
+                                "state    VARCHAR( 2 ),"      + ;
+                                "zip      VARCHAR( 10 ),"     + ;
+                                "hiredate DATE,"              + ;
+                                "married  BOOL,"              + ;
+                                "age      INTEGER,"           + ;
+                                "salary   DECIMAL( 9, 2 ),"   + ;
+                                "notes    VARCHAR( 70 ) );"
+oDb := THDO():new( _DBMS,  )
+if oDb:connect( _DB, _CONN )
+        msg( _DB + " abierta" )
+	try
+        oDb:exec( cCreaTabla )
+        msg( "La tabla " + cTabla + " se ha creado correctamente" )
+	catch
+        msg( "Codigo del error: " + oDb:errorCode() + ;
+             ";Numero de error: " + hb_ntos( oDb:errorCode() ) + ;
+             ";Descripcion del error: " + oDb:errorStr(), ;
+             "Error al crear la tabla " + cTabla )
+    end
+endif
+oDb:disconnect()
+msg( _DB + " cerrada" )
+```
+
 
 
 #### free()
@@ -82,6 +115,14 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```Xbase
+oCon := THDO():new( _DBMS )
+if oCon:connect( _DB, _CONN )
+...
+endif
+oCon:free()
+```
 
 
 
@@ -97,6 +138,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```Xbase
+
+```
+
 
 
 #### execDirect()
@@ -110,6 +155,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```Xbase
+
+```
 
 
 
@@ -125,6 +174,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### prepare()
@@ -138,6 +191,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -153,6 +210,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### rowset()
@@ -166,6 +227,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -181,6 +246,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### beginTransaction()
@@ -194,6 +263,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -209,6 +282,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### inTrasaction()
@@ -222,6 +299,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -237,6 +318,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### setAttribute()
@@ -250,6 +335,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -265,6 +354,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### errorCode()
@@ -278,6 +371,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -293,6 +390,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### errorStr()
@@ -306,6 +407,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -321,6 +426,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### ping()
@@ -334,6 +443,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -349,6 +462,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### throwException()
@@ -362,6 +479,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -377,6 +498,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```
+xbase
+```
+
 
 
 #### rdlInfo()
@@ -390,6 +515,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -405,6 +534,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### getRdlName()
@@ -418,6 +551,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -433,6 +570,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### getHost()
@@ -446,6 +587,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -461,6 +606,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### getPassword()
@@ -474,6 +623,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -489,6 +642,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### getUnixSocket()
@@ -502,6 +659,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -517,6 +678,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### loadFromFile()
@@ -530,6 +695,10 @@ oDb:connect( _DB, _CONN )
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -545,6 +714,10 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### xCreateTable()
@@ -559,7 +732,9 @@ oDb:connect( _DB, _CONN )
 
 ##### Ejemplo:
 
+```xb
 
+```
 
 
 
