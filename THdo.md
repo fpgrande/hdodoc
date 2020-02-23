@@ -247,7 +247,48 @@ oDb:disconnect()
 ```xbase
 local oDb, oStmt, e
 local cTabla := "test"
+local first, last, street, city, state, zip, hiredate, married, age, salary, notes
+local cSql := "INSERT INTO " + cTabla + ;
+      " ( first, last, street, city, state, zip, hiredate, married, age, salary, notes ) "  + ;
+      "VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? );"
+oDb := THDO():new( _DBMS )
+if oDb:connect( _DB, _CONN )
+   TRY
+     oDb:beginTransaction()
+////////////////////////////////////////////////////////////////////////////////
+// Sepuede usar eto:			
+//            oStmt := oDb:prepare( cSql ) // Prepara la sentencia
+// o esto:
+			oStmt := TStmt():new( oDb )
+			oStmt:prepare( cSql )
+////////////////////////////////////////////////////////////////////////////////
+           // ----------------------------------------------------------------
+            // Enlaza los valores con los parametros de sustitucion
+            oStmt:bindValue( 1, 'Maria' )
+            oStmt:bindValue( 2, 'Gimenez' )
+            oStmt:bindValue( 3, 'Pintor Velazquez, 89' )
+            oStmt:bindValue( 4, 'Dos Hermanas' )
+            oStmt:bindValue( 5, 'ES' )
+            oStmt:bindValue( 6, '41700' )
+            oStmt:bindValue( 7, myDate() )
+            oStmt:bindValue( 8, .t. )
+            oStmt:bindValue( 9,  33 )
+            oStmt:bindValue( 10, 5670.50 )
+            oStmt:bindValue( 11, 'Esta es la nota de Maria...' )
 
+            oStmt:execute()
+            oStmt:free()
+
+			oStmt := TStmt():new( oDb )
+			oStmt:prepare( cSql )
+	CATCH e
+            eval( errorblock(), e )
+			oDb:rollBack()
+    FINALLY
+            oStmt:free()
+    end
+endif
+oDb:disconnect()
 ```
 
 
