@@ -139,7 +139,36 @@ oCon:free()
 ##### Ejemplo:
 
 ```Xbase
-
+local oDb
+local cTabla := "test"
+local cCreaTabla := "CREATE TABLE IF NOT EXISTS test ( "  + ;
+                                "id INTEGER PRIMARY KEY " + cAutoInc + ","  + ;
+                                "first    VARCHAR( 20 ),"     + ;
+                                "last     VARCHAR( 20 ),"     + ;
+                                "street   VARCHAR( 30 ),"     + ;
+                                "city     VARCHAR( 30 ),"     + ;
+                                "state    VARCHAR( 2 ),"      + ;
+                                "zip      VARCHAR( 10 ),"     + ;
+                                "hiredate DATE,"              + ;
+                                "married  BOOL,"              + ;
+                                "age      INTEGER,"           + ;
+                                "salary   DECIMAL( 9, 2 ),"   + ;
+                                "notes    VARCHAR( 70 ) );"
+oDb := THDO():new( _DBMS,  )
+if oDb:connect( _DB, _CONN )
+   msg( _DB + " abierta" )
+   try
+       oDb:exec( cCreaTabla )
+       msg( "La tabla " + cTabla + " se ha creado correctamente" )
+   catch
+       msg( "Codigo del error: " + oDb:errorCode() + ;
+            ";Numero de error: " + hb_ntos( oDb:errorCode() ) + ;
+            ";Descripcion del error: " + oDb:errorStr(), ;
+            "Error al crear la tabla " + cTabla )
+   end
+endif
+oDb:disconnect()
+msg( _DB + " cerrada" )
 ```
 
 
