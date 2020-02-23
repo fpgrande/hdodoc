@@ -1,6 +1,8 @@
 # HDO Documentación 
 
-![hdologo](/home/basajaun/Descargas/HDO/logo/hdologo.png)
+![logohdo](/home/basajaun/Descargas/HDO/hdodoc/logohdo.png)Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+
+
 
 
 ## ¿Qué es HDO?
