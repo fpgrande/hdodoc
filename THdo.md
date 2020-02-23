@@ -186,7 +186,24 @@ msg( _DB + " cerrada" )
 ##### Ejemplo:
 
 ```Xbase
-
+#define _CREA_TB_IMG "CREATE TABLE IF NOT EXISTS test_img ( uid INTEGER, foto LONGBLOB );"
+#define _INS_IMG "INSERT INTO test_img( uid, foto ) VALUES( ?, ? );"
+local oDb, oStmt
+oDb := THDO():new( _DBMS )
+if oDb:connect( _DB, _CONN )
+   oDb:execDirect( _CREA_TB_IMG )
+   oStmt := oDb:prepare( _INS_IMG )
+   oStmt:bindValue( 1, 1 )
+   oStmt:bindValue( 2, oDb:loadFromFile( "Img_00.png" ) )
+   oStmt:execute()
+   
+   oStmt:bindValue( 1, 2 )
+   oStmt:bindValue( 2, oDb:loadFromFile( "img_01.bmp" ) )
+   oStmt:execute()
+	
+   oStmt:free()
+endif
+oDb:free()
 ```
 
 
@@ -204,6 +221,12 @@ msg( _DB + " cerrada" )
 ##### Ejemplo:
 
 ```xbase
+local oDb
+oDb := THDO():new( _DBMS )
+if oDb:connect( _DB, _CONN )       //count(*)
+   msg( oDb:execScalar( "SELECT *  FROM test", 12 ), "Num. Reg. en Test" )
+endif
+oDb:disconnect()
 
 ```
 
@@ -222,6 +245,8 @@ msg( _DB + " cerrada" )
 ##### Ejemplo:
 
 ```xbase
+local oDb, oStmt, e
+local cTabla := "test"
 
 ```
 
