@@ -1,5 +1,6 @@
-
 # HDO Documentación 
+
+![hdologo](/home/basajaun/Descargas/HDO/logo/hdologo.png)
 
 
 ## ¿Qué es HDO?
