@@ -306,7 +306,24 @@ oDb:disconnect()
 ##### Ejemplo:
 
 ```xbase
+local oDb, oStmt, e
+local cSql := "SELECT * FROM test"
+	
+oDb := THDO():new( _DBMS )
 
+if oDb:connect( _DB, _CONN )
+
+   TRY		
+		oStmt := oDb:query( cSql )
+   CATCH e
+        msg( "Se ha producido un error" )
+        eval( errorblock(), e )
+   FINALLY
+        // Cierra el objeto sentencia para liberar memoria
+        oStmt:free()
+   end
+endif
+oDb:disconnect()
 ```
 
 
