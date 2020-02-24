@@ -341,7 +341,17 @@ oDb:disconnect()
 ##### Ejemplo:
 
 ```xbase
-
+#define STMT_SEL "SELECT * FROM test;"
+local oDb, oRS
+oDb := THDO():new( _DBMS )
+if oDb:connect( _DB, _CONN )
+        oRS := oDb:rowSet( STMT_SEL )
+        oRS:load()
+        oRS:GoTop()
+		miBrwCursor( oRS, 0, 0, maxrow(), maxcol() )
+        oRS:free()
+endif
+oDb:disconnect()
 ```
 
 
