@@ -284,8 +284,8 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 **Ejemplo:**
 
 ```xbase
-	oRowset := TRowSet():new( oDataBase, "SELECT * FROM test WHERE last like ?" )
-	oRowset:errorStr() // --> ""
+oRowset := TRowSet():new( oDataBase, "SELECT * FROM            test WHERE last like ?" )
+oRowset:errorStr() // --> ""
 ```
 
 
@@ -302,6 +302,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### setAttribute()
@@ -315,6 +319,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -330,6 +338,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### refresh()
@@ -343,6 +355,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -358,6 +374,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### free()
@@ -371,6 +391,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -386,6 +410,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### goBottom()
@@ -399,6 +427,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -414,6 +446,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### skip()
@@ -427,6 +463,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -442,6 +482,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### fieldCount()
@@ -455,6 +499,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -470,6 +518,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### fieldName()
@@ -483,6 +535,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -498,6 +554,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### fieldLen()
@@ -511,6 +571,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -526,6 +590,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### fieldPos()
@@ -539,6 +607,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -554,6 +626,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### recNo()
@@ -567,6 +643,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -582,6 +662,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### lastRec()
@@ -595,6 +679,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -610,6 +698,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### bof()
@@ -623,6 +715,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -638,6 +734,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### first()
@@ -651,6 +751,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -666,6 +770,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### next()
@@ -679,6 +787,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -694,6 +806,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### moveBy()
@@ -707,6 +823,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -722,6 +842,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### getColCount()
@@ -735,6 +859,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -750,6 +878,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### getMetaField()
@@ -763,6 +895,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -778,6 +914,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### getColType()
@@ -791,6 +931,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -806,6 +950,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### getColDec()
@@ -819,6 +967,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -834,6 +986,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### getValue()
@@ -847,6 +1003,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -862,6 +1022,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### getValueByPos()
@@ -875,6 +1039,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -890,6 +1058,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### rowCount()
@@ -903,6 +1075,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -918,6 +1094,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### listColNames()
@@ -931,6 +1111,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -946,6 +1130,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### find()
@@ -959,6 +1147,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -974,6 +1166,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### findString()
@@ -987,6 +1183,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -1002,6 +1202,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### setInsertStmt()
@@ -1015,6 +1219,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -1030,6 +1238,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### setDeleteStmt()
@@ -1043,6 +1255,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -1058,6 +1274,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### update()
@@ -1071,6 +1291,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -1086,6 +1310,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### listValues()
@@ -1099,6 +1327,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -1114,6 +1346,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### getValuesArray()
@@ -1127,6 +1363,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -1142,6 +1382,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### setFilter()
@@ -1155,6 +1399,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -1170,6 +1418,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### throwException()
@@ -1184,6 +1436,10 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### throw()
@@ -1197,3 +1453,8 @@ Muestra el texto de error en la última ejecución de RowSet, o cero, si no hubo
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
+

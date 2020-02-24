@@ -16,6 +16,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### getQueryStr()
@@ -29,6 +33,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -44,6 +52,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### getColType()
@@ -57,6 +69,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -72,6 +88,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### getColDec()
@@ -85,6 +105,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -100,6 +124,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### columnCount()
@@ -113,6 +141,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -128,6 +160,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### bindColumn()
@@ -141,6 +177,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -156,6 +196,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### getColumn()
@@ -169,6 +213,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -184,6 +232,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### fetchColumn()
@@ -197,6 +249,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -212,6 +268,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### rowCount()
@@ -225,6 +285,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -240,6 +304,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### fieldType()
@@ -253,6 +321,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -268,6 +340,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### fieldDec()
@@ -281,6 +357,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -296,6 +376,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### fieldCount()
@@ -309,6 +393,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -324,6 +412,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### bindField()
@@ -337,6 +429,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -352,6 +448,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### fieldGet()
@@ -365,6 +465,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -380,6 +484,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### fetchFieldByName()
@@ -393,6 +501,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -408,6 +520,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### lastRec()
@@ -421,6 +537,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -436,6 +556,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### bindValue()
@@ -449,6 +573,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -464,6 +592,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### closeCursor()
@@ -477,6 +609,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -492,6 +628,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### errorNo()
@@ -505,6 +645,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -520,6 +664,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### execute()
@@ -533,6 +681,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -548,6 +700,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### query()
@@ -561,6 +717,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -576,6 +736,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### fetchDirect()
@@ -589,6 +753,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -604,6 +772,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### fetchArray()
@@ -617,6 +789,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -632,6 +808,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### fetchHash()
@@ -645,6 +825,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -660,6 +844,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### fetchJson()
@@ -673,6 +861,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -688,6 +880,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### fetchAllArray()
@@ -701,6 +897,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -716,6 +916,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### fetchAllJson()
@@ -729,6 +933,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -744,6 +952,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### nextRowSet()
@@ -757,6 +969,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -772,6 +988,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### setFetchMode()
@@ -785,6 +1005,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -800,6 +1024,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### getHandle()
@@ -813,6 +1041,10 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
 
 
 
@@ -828,6 +1060,10 @@
 
 ##### Ejemplo:
 
+```xbase
+
+```
+
 
 
 #### throw()
@@ -841,3 +1077,8 @@
 ##### Descripción:
 
 ##### Ejemplo:
+
+```xbase
+
+```
+
