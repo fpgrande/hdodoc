@@ -1163,7 +1163,36 @@ return
 ##### Ejemplo:
 
 ```xbase
+local oDb, oStmt
+local uid, foto
+cls
 
+? "Prueba con imagenes..."
+? "Se crea una tabla con un campo BLOB y se inserta una imagen cargada con"
+? "el metodo oDb:loadFromFile( <fic> )"
+
+oDb := THDO():new( _DBMS )
+
+if oDb:connect( _DB, _CONN )
+   oDb:execDirect( _CREA_TB_IMG )
+		
+   oStmt := oDb:prepare( _INS_IMG )
+
+   oStmt:bindParam( 1, @uid )
+   oStmt:bindParam( 2, @foto ) 
+		
+   uid := 1
+   foto := oDb:loadFromFile( "img_01.bmp" )
+   oStmt:execute()
+		
+   uid := 2
+   foto := oDb:loadFromFile( "img_00.png" )
+   oStmt:execute()
+	
+   oStmt:free()
+endif
+oDb:free()
+msg( "Revisa la tabla", "Fin" )	
 ```
 
 
@@ -1181,7 +1210,26 @@ return
 ##### Ejemplo:
 
 ```xbase
+local oDb, aTables, nlen, i
+oDb := THDO():new( _DBMS,  )
 
+if oDb:connect( _DB, _CONN )
+   aTables := oDb:listTables()
+
+   // Lo podemos recorrer directamente
+   cls
+
+   ? "Tablas de la base de datos"
+   ? Replicate( "_", MaxCol() )
+
+   nlen := len( aTables )
+
+   for i := 1 to nlen
+       ? i, aTables[ i ]
+   end
+
+   muestra( aTables, "Tablas:" )
+endif
 ```
 
 
@@ -1199,7 +1247,34 @@ return
 ##### Ejemplo:
 
 ```xb
+local oDb, aTables, nlen, i
+oDb := THDO():new( _DBMS,  )
 
+if oDb:connect( _DB, _CONN )
+   aTables := oDb:listTables()
+
+   // Lo podemos recorrer directamente
+   cls
+
+   ? "Tablas de la base de datos"
+   ? Replicate( "_", MaxCol() )
+
+   nlen := len( aTables )
+
+   for i := 1 to nlen
+       ? i, aTables[ i ]
+   end
+
+   muestra( aTables, "Tablas:" )
+endif
+//-------------------------------------------------
+use test
+aTables := DBStruct()
+oDb:xCreateTable( "TbTemp", aTables )
+close test
+//-------------------------------------------------
+
+oDb:disconnect()
 ```
 
 
