@@ -607,7 +607,31 @@ endif
 ##### Ejemplo:
 
 ```xbase
-
+local oDb
+oDb := THDO():new( _DBMS )
+if oDb:connect( _DB, _CONN )
+        msg( "Base de datos " + _DB + " abierta" )
+endif
+muestra( oDb:rdlInfo() )
+cls
+? "Estado actual de los atributos de HDO:"
+? "-------------------------------------------------------------------------"
+? "HDO_ATTR_RDL_NAME ------------->", oDb:getAttribute( HDO_ATTR_RDL_NAME )
+? "HDO_ATTR_CASE ----------------->", oDb:getAttribute( HDO_ATTR_CASE )
+? "HDO_ATTR_AUTOCOMMIT ----------->", oDb:getAttribute( HDO_ATTR_AUTOCOMMIT )
+? "HDO_ATTR_TIMEOUT -------------->", oDb:getAttribute( HDO_ATTR_TIMEOUT )
+? "HDO_ATTR_CONNECTION_STATUS ---->", oDb:getAttribute( HDO_ATTR_CONNECTION_STATUS )
+? "HDO_ATTR_ERRMODE -------------->", oDb:getAttribute( HDO_ATTR_ERRMODE )
+? "HDO_ATTR_DEF_STR_PAD ---------->", oDb:getAttribute( HDO_ATTR_DEF_STR_PAD )
+? "HDO_ATTR_DEF_TINY_AS_BOOL------>", oDb:getAttribute( HDO_ATTR_DEF_TINY_AS_BOOL )
+? "HDO_ATTR_SERVER_VERSION ------->", oDb:getAttribute( HDO_ATTR_SERVER_VERSION )
+? "HDO_ATTR_CLIENT_VERSION ------->", oDb:getAttribute( HDO_ATTR_CLIENT_VERSION )
+? "HDO_ATTR_SERVER_INFO ---------->", oDb:getAttribute( HDO_ATTR_SERVER_INFO )
+? "HDO_ATTR_CLIENT_INFO ---------->", oDb:getAttribute( HDO_ATTR_CLIENT_INFO )
+? "-------------------------------------------------------------------------"
+espera()
+oDb:free()
+msg( _DB + " cerrada" )    
 ```
 
 
