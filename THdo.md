@@ -704,7 +704,10 @@ oDb:disconnect()
 ##### Ejemplo:
 
 ```xbase
-
+msg( oDb:escapeStr( [Manuel's kely \todo mi\o /\/\ y mira las comillas dobles "j2j2"] ), "Ejemplo de escapeStr" )
+msg( oDb:escapeStr( "" ), "Ejemplo de escapeStr" )
+msg( oDb:escapeStr( 1 ), "Ejemplo de escapeStr" )
+msg( oDb:escapeStr(), "Ejemplo de escapeStr" )
 ```
 
 
@@ -722,7 +725,7 @@ oDb:disconnect()
 ##### Ejemplo:
 
 ```xbase
-
+???
 ```
 
 
@@ -740,7 +743,7 @@ oDb:disconnect()
 ##### Ejemplo:
 
 ```xbase
-
+???
 ```
 
 
@@ -758,7 +761,7 @@ oDb:disconnect()
 ##### Ejemplo:
 
 ```xbase
-
+???
 ```
 
 
@@ -775,8 +778,8 @@ oDb:disconnect()
 
 ##### Ejemplo:
 
-```
-xbase
+```xbase
+???
 ```
 
 
@@ -794,7 +797,16 @@ xbase
 ##### Ejemplo:
 
 ```xbase
-
+local oDb
+oDb := THDO():new( _DBMS )
+if oDb:connect( _DB, _CONN )
+   msg( "Base de datos " + _DB + " abierta" )
+endif
+muestra( oDb:rdlInfo() )
+...
+...
+oDb:free()
+msg( _DB + " cerrada" )
 ```
 
 
