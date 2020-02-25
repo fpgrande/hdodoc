@@ -617,7 +617,18 @@ msg( _DB + " cerrada" )
 ##### Ejemplo:
 
 ```xbase
-
+local oDb
+oDb := TMyHDO():new( _DBMS )
+if oDb:connect( _DB, _CONN )
+...
+...
+else
+        Msg( oDb:errorCode(), "Codigo del Error" )
+        Msg( Str( oDb:errorNo() ),"Numero del Error")
+        Msg( oDb:errorStr(),"Cadena de error")
+        msg( "No se ha establecido la conexion" )
+endif
+oDb:disconnect()
 ```
 
 
@@ -635,7 +646,18 @@ msg( _DB + " cerrada" )
 ##### Ejemplo:
 
 ```xbase
-
+local oDb
+oDb := TMyHDO():new( _DBMS )
+if oDb:connect( _DB, _CONN )
+...
+...
+else
+        Msg( oDb:errorCode(), "Codigo del Error" )
+        Msg( Str( oDb:errorNo() ),"Numero del Error")
+        Msg( oDb:errorStr(),"Cadena de error")
+        msg( "No se ha establecido la conexion" )
+endif
+oDb:disconnect()
 ```
 
 
@@ -653,7 +675,18 @@ msg( _DB + " cerrada" )
 ##### Ejemplo:
 
 ```xbase
-
+local oDb
+oDb := TMyHDO():new( _DBMS )
+if oDb:connect( _DB, _CONN )
+...
+...
+else
+        Msg( oDb:errorCode(), "Codigo del Error" )
+        Msg( Str( oDb:errorNo() ),"Numero del Error")
+        Msg( oDb:errorStr(),"Cadena de error")
+        msg( "No se ha establecido la conexion" )
+endif
+oDb:disconnect()
 ```
 
 
