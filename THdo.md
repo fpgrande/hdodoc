@@ -574,7 +574,22 @@ end
 ##### Ejemplo:
 
 ```xbase
+/* IO PAD por defecto */
+#define HDO_ATTR_DEF_STR_PAD 		    100003	
+/* IO Tiny as bool por defecto */        
+#define HDO_ATTR_DEF_TINY_AS_BOOL 	    100004	
+   
+local lRet
 
+oDb := THDO():new( _DBMS )
+	
+lRet := oDb:connect( _DB, _CONN )
+	
+if lRet
+   oDb:setAttribute( HDO_ATTR_DEF_STR_PAD, .t. )
+   oDb:setAttribute( HDO_ATTR_DEF_TINY_AS_BOOL,.t. )
+   preparaStmt()
+endif
 ```
 
 
