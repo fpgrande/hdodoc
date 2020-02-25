@@ -824,7 +824,8 @@ msg( _DB + " cerrada" )
 ##### Ejemplo:
 
 ```xbase
-
+// Procesa los datos:
+HDO_rowProcess( oCon:getHandle(), hBackFile, cTbName )
 ```
 
 
@@ -842,7 +843,29 @@ msg( _DB + " cerrada" )
 ##### Ejemplo:
 
 ```xbase
+CLASS TMyHDO INHERIT THDO
 
+    METHOD info()
+
+END CLASS
+
+PROCEDURE info() CLASS TMyHDO
+
+    local a := ::rdlInfo()
+
+    aadd( a, ;
+        "Host: "        + ::getHost()        + ";" + ;
+        "DbName: "      + ::getDbName()      + ";" + ;
+        "User: "        + ::getUser()        + ";" + ;
+        "Password: "    + ::getPassword()    + ";" + ;
+        "Port: "    	+ AllTrim( Str( ::getPort() ) ) + ";" + ;
+        "UnixSocket: "  + ::getUnixSocket()  + ";" + ;
+        "ClientFlag: "  + AllTrim( Str( ::getClientFlag() ) ) + ";" + ;
+        "RdlName: "     + ::getRdlName() )
+		
+    muestra( a, "Clase " + ::className() )
+
+return
 ```
 
 
