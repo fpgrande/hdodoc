@@ -1246,7 +1246,7 @@ endif
 
 ##### Ejemplo:
 
-```xb
+```xbase
 local oDb, aTables, nlen, i
 oDb := THDO():new( _DBMS,  )
 
