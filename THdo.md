@@ -373,25 +373,19 @@ local oDb, i, e
 oDb := THDO():new( _DBMS )
 TRY
    oDb:connect( _DB, _CONN )		
-   msg( _DB + " abierta;;" + if(         	
-       oDb:inTransaction(), "Esta ", "No esta " ) + 
-       "en una trasaccion" )			
-   oDb:beginTransaction()
-   msg( "Ahora " + if( oDb:inTransaction(), "esta ", 
-        "no esta " ) + "en una trasaccion" )		    i := oDb:exec( cIns )
-   msg( hb_ntos( i ) + " - " + hb_ntos( 
-        oDb:lastInsertId() ), "Columnas afectadas y 
-        lastInsertId" )			
-   oDb:commit()
+        msg( _DB + " abierta;;" + if( oDb:inTransaction(), "Esta ", "No esta " ) + "en una trasaccion" )			
+        oDb:beginTransaction()
+        msg( "Ahora " + if( oDb:inTransaction(), "esta ", "no esta " ) + "en una trasaccion" )			
+        i := oDb:exec( cIns )
+        msg( hb_ntos( i ) + " - " + hb_ntos( oDb:lastInsertId() ), "Columnas afectadas y lastInsertId" )			
+        oDb:commit()
 CATCH e
-   muestra( e:SubSystem + ";" + padl( e:SubCode, 4 ) 
-            + ";" + ;
-            e:Operation + ";" + e:Description, 
-            "Error desde Harbour" )
-   oDb:rollBack()
+        muestra( e:SubSystem + ";" + padl( e:SubCode, 4 ) + ";" + ;
+           e:Operation + ";" + e:Description, "Error desde Harbour" )
+        oDb:rollBack()
 finally
-    oDb:disconnect()
-    msg( _DB + " cerrada" )
+        oDb:disconnect()
+        msg( _DB + " cerrada" )
 end
 ```
 
@@ -414,25 +408,19 @@ local oDb, i, e
 oDb := THDO():new( _DBMS )
 TRY
    oDb:connect( _DB, _CONN )		
-   msg( _DB + " abierta;;" + if(         	
-       oDb:inTransaction(), "Esta ", "No esta " ) + 
-       "en una trasaccion" )			
-   oDb:beginTransaction()
-   msg( "Ahora " + if( oDb:inTransaction(), "esta ", 
-        "no esta " ) + "en una trasaccion" )		    i := oDb:exec( cIns )
-   msg( hb_ntos( i ) + " - " + hb_ntos( 
-        oDb:lastInsertId() ), "Columnas afectadas y 
-        lastInsertId" )			
-   oDb:commit()
+        msg( _DB + " abierta;;" + if( oDb:inTransaction(), "Esta ", "No esta " ) + "en una trasaccion" )			
+        oDb:beginTransaction()
+        msg( "Ahora " + if( oDb:inTransaction(), "esta ", "no esta " ) + "en una trasaccion" )			
+        i := oDb:exec( cIns )
+        msg( hb_ntos( i ) + " - " + hb_ntos( oDb:lastInsertId() ), "Columnas afectadas y lastInsertId" )			
+        oDb:commit()
 CATCH e
-   muestra( e:SubSystem + ";" + padl( e:SubCode, 4 ) 
-            + ";" + ;
-            e:Operation + ";" + e:Description, 
-            "Error desde Harbour" )
-   oDb:rollBack()
+        muestra( e:SubSystem + ";" + padl( e:SubCode, 4 ) + ";" + ;
+           e:Operation + ";" + e:Description, "Error desde Harbour" )
+        oDb:rollBack()
 finally
-    oDb:disconnect()
-    msg( _DB + " cerrada" )
+        oDb:disconnect()
+        msg( _DB + " cerrada" )
 end
 ```
 
@@ -455,25 +443,19 @@ local oDb, i, e
 oDb := THDO():new( _DBMS )
 TRY
    oDb:connect( _DB, _CONN )		
-   msg( _DB + " abierta;;" + if(         	
-       oDb:inTransaction(), "Esta ", "No esta " ) + 
-       "en una trasaccion" )			
-   oDb:beginTransaction()
-   msg( "Ahora " + if( oDb:inTransaction(), "esta ", 
-        "no esta " ) + "en una trasaccion" )		    i := oDb:exec( cIns )
-   msg( hb_ntos( i ) + " - " + hb_ntos( 
-        oDb:lastInsertId() ), "Columnas afectadas y 
-        lastInsertId" )			
-   oDb:commit()
+        msg( _DB + " abierta;;" + if( oDb:inTransaction(), "Esta ", "No esta " ) + "en una trasaccion" )			
+        oDb:beginTransaction()
+        msg( "Ahora " + if( oDb:inTransaction(), "esta ", "no esta " ) + "en una trasaccion" )			
+        i := oDb:exec( cIns )
+        msg( hb_ntos( i ) + " - " + hb_ntos( oDb:lastInsertId() ), "Columnas afectadas y lastInsertId" )			
+        oDb:commit()
 CATCH e
-   muestra( e:SubSystem + ";" + padl( e:SubCode, 4 ) 
-            + ";" + ;
-            e:Operation + ";" + e:Description, 
-            "Error desde Harbour" )
-   oDb:rollBack()
+        muestra( e:SubSystem + ";" + padl( e:SubCode, 4 ) + ";" + ;
+           e:Operation + ";" + e:Description, "Error desde Harbour" )
+        oDb:rollBack()
 finally
-    oDb:disconnect()
-    msg( _DB + " cerrada" )
+        oDb:disconnect()
+        msg( _DB + " cerrada" )
 end
 ```
 
@@ -496,25 +478,19 @@ local oDb, i, e
 oDb := THDO():new( _DBMS )
 TRY
    oDb:connect( _DB, _CONN )		
-   msg( _DB + " abierta;;" + if(         	
-       oDb:inTransaction(), "Esta ", "No esta " ) + 
-       "en una trasaccion" )			
-   oDb:beginTransaction()
-   msg( "Ahora " + if( oDb:inTransaction(), "esta ", 
-        "no esta " ) + "en una trasaccion" )		    i := oDb:exec( cIns )
-   msg( hb_ntos( i ) + " - " + hb_ntos( 
-        oDb:lastInsertId() ), "Columnas afectadas y 
-        lastInsertId" )			
-   oDb:commit()
+        msg( _DB + " abierta;;" + if( oDb:inTransaction(), "Esta ", "No esta " ) + "en una trasaccion" )			
+        oDb:beginTransaction()
+        msg( "Ahora " + if( oDb:inTransaction(), "esta ", "no esta " ) + "en una trasaccion" )			
+        i := oDb:exec( cIns )
+        msg( hb_ntos( i ) + " - " + hb_ntos( oDb:lastInsertId() ), "Columnas afectadas y lastInsertId" )			
+        oDb:commit()
 CATCH e
-   muestra( e:SubSystem + ";" + padl( e:SubCode, 4 ) 
-            + ";" + ;
-            e:Operation + ";" + e:Description, 
-            "Error desde Harbour" )
-   oDb:rollBack()
+        muestra( e:SubSystem + ";" + padl( e:SubCode, 4 ) + ";" + ;
+           e:Operation + ";" + e:Description, "Error desde Harbour" )
+        oDb:rollBack()
 finally
-    oDb:disconnect()
-    msg( _DB + " cerrada" )
+        oDb:disconnect()
+        msg( _DB + " cerrada" )
 end
 ```
 
@@ -537,25 +513,19 @@ local oDb, i, e
 oDb := THDO():new( _DBMS )
 TRY
    oDb:connect( _DB, _CONN )		
-   msg( _DB + " abierta;;" + if(         	
-       oDb:inTransaction(), "Esta ", "No esta " ) + 
-       "en una trasaccion" )			
-   oDb:beginTransaction()
-   msg( "Ahora " + if( oDb:inTransaction(), "esta ", 
-        "no esta " ) + "en una trasaccion" )		    i := oDb:exec( cIns )
-   msg( hb_ntos( i ) + " - " + hb_ntos( 
-        oDb:lastInsertId() ), "Columnas afectadas y 
-        lastInsertId" )			
-   oDb:commit()
+        msg( _DB + " abierta;;" + if( oDb:inTransaction(), "Esta ", "No esta " ) + "en una trasaccion" )			
+        oDb:beginTransaction()
+        msg( "Ahora " + if( oDb:inTransaction(), "esta ", "no esta " ) + "en una trasaccion" )			
+        i := oDb:exec( cIns )
+        msg( hb_ntos( i ) + " - " + hb_ntos( oDb:lastInsertId() ), "Columnas afectadas y lastInsertId" )			
+        oDb:commit()
 CATCH e
-   muestra( e:SubSystem + ";" + padl( e:SubCode, 4 ) 
-            + ";" + ;
-            e:Operation + ";" + e:Description, 
-            "Error desde Harbour" )
-   oDb:rollBack()
+        muestra( e:SubSystem + ";" + padl( e:SubCode, 4 ) + ";" + ;
+           e:Operation + ";" + e:Description, "Error desde Harbour" )
+        oDb:rollBack()
 finally
-    oDb:disconnect()
-    msg( _DB + " cerrada" )
+        oDb:disconnect()
+        msg( _DB + " cerrada" )
 end
 ```
 
@@ -574,10 +544,8 @@ end
 ##### Ejemplo:
 
 ```xbase
-/* IO PAD por defecto */
-#define HDO_ATTR_DEF_STR_PAD 		    100003	
-/* IO Tiny as bool por defecto */        
-#define HDO_ATTR_DEF_TINY_AS_BOOL 	    100004	
+#define HDO_ATTR_DEF_STR_PAD 		    100003	/* IO PAD por defecto */
+#define HDO_ATTR_DEF_TINY_AS_BOOL 	    100004	/* IO Tiny as bool por defecto */ 
    
 local lRet
 
