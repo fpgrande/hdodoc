@@ -303,7 +303,31 @@ oRowset:errorStr() // --> ""
 ##### Ejemplo:
 
 ```xbase
+oDb := THDO():new( _DBMS )
+if oDb:connect( _DB, _CONN )
+try
+   oRS := oDb:rowSet( STMT_SEL )
+   // Prueba de setAttribute y getAttribute
+   msg( oRS:getAttribute( STMT_ATTR_STR_PAD ), "STMT_ATTR_STR_PAD" )
+   oRS:setAttribute( STMT_ATTR_STR_PAD, .f. )
+   msg( oRS:getAttribute( STMT_ATTR_STR_PAD ), "STMT_ATTR_STR_PAD" )
 
+   msg( oRS:getAttribute( STMT_ATTR_TINY_AS_BOOL ), "STMT_ATTR_TINY_AS_BOOL" )
+   oRS:setAttribute( STMT_ATTR_TINY_AS_BOOL, .t. )
+   msg( oRS:getAttribute( STMT_ATTR_TINY_AS_BOOL ), "STMT_ATTR_TINY_AS_BOOL" )
+			
+   msg( oRS:getAttribute( STMT_ATTR_CURSOR_TYPE ), "STMT_ATTR_CURSOR_TYPE" )
+   oRS:setAttribute( STMT_ATTR_CURSOR_TYPE, CURSOR_TYPE_READ_ONLY )			
+   msg( oRS:getAttribute( STMT_ATTR_CURSOR_TYPE ), "STMT_ATTR_CURSOR_TYPE" )
+
+   msg( oRS:getAttribute( STMT_ATTR_PREFETCH_ROWS ), "STMT_ATTR_PREFETCH_ROWS" )
+   oRS:setAttribute( STMT_ATTR_PREFETCH_ROWS, 100 )			
+   msg( oRS:getAttribute( STMT_ATTR_PREFETCH_ROWS ), "STMT_ATTR_PREFETCH_ROWS" )
+
+   msg( oRS:getAttribute( STMT_ATTR_UPDATE_MAX_LENGTH ), "STMT_ATTR_UPDATE_MAX_LENGTH" )    oRS:setAttribute( STMT_ATTR_UPDATE_MAX_LENGTH, .f. )			
+   msg( oRS:getAttribute( STMT_ATTR_UPDATE_MAX_LENGTH ), "STMT_ATTR_UPDATE_MAX_LENGTH" )
+   ...
+   ...
 ```
 
 
@@ -321,7 +345,31 @@ oRowset:errorStr() // --> ""
 ##### Ejemplo:
 
 ```xbase
+oDb := THDO():new( _DBMS )
+if oDb:connect( _DB, _CONN )
+try
+   oRS := oDb:rowSet( STMT_SEL )
+   // Prueba de setAttribute y getAttribute
+   msg( oRS:getAttribute( STMT_ATTR_STR_PAD ), "STMT_ATTR_STR_PAD" )
+   oRS:setAttribute( STMT_ATTR_STR_PAD, .f. )
+   msg( oRS:getAttribute( STMT_ATTR_STR_PAD ), "STMT_ATTR_STR_PAD" )
 
+   msg( oRS:getAttribute( STMT_ATTR_TINY_AS_BOOL ), "STMT_ATTR_TINY_AS_BOOL" )
+   oRS:setAttribute( STMT_ATTR_TINY_AS_BOOL, .t. )
+   msg( oRS:getAttribute( STMT_ATTR_TINY_AS_BOOL ), "STMT_ATTR_TINY_AS_BOOL" )
+			
+   msg( oRS:getAttribute( STMT_ATTR_CURSOR_TYPE ), "STMT_ATTR_CURSOR_TYPE" )
+   oRS:setAttribute( STMT_ATTR_CURSOR_TYPE, CURSOR_TYPE_READ_ONLY )			
+   msg( oRS:getAttribute( STMT_ATTR_CURSOR_TYPE ), "STMT_ATTR_CURSOR_TYPE" )
+
+   msg( oRS:getAttribute( STMT_ATTR_PREFETCH_ROWS ), "STMT_ATTR_PREFETCH_ROWS" )
+   oRS:setAttribute( STMT_ATTR_PREFETCH_ROWS, 100 )			
+   msg( oRS:getAttribute( STMT_ATTR_PREFETCH_ROWS ), "STMT_ATTR_PREFETCH_ROWS" )
+
+   msg( oRS:getAttribute( STMT_ATTR_UPDATE_MAX_LENGTH ), "STMT_ATTR_UPDATE_MAX_LENGTH" )    oRS:setAttribute( STMT_ATTR_UPDATE_MAX_LENGTH, .f. )			
+   msg( oRS:getAttribute( STMT_ATTR_UPDATE_MAX_LENGTH ), "STMT_ATTR_UPDATE_MAX_LENGTH" )
+   ...
+   ...
 ```
 
 
@@ -339,7 +387,15 @@ oRowset:errorStr() // --> ""
 ##### Ejemplo:
 
 ```xbase
+local oDb, oRS
+oDb := THDO():new( _DBMS )
 
+if oDb:connect( _DB, _CONN )
+try
+	oRS := oDb:rowSet( "SELECT * FROM test limit 1" ) //
+	oRS:load()		
+...
+...
 ```
 
 
