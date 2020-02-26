@@ -413,7 +413,18 @@ try
 ##### Ejemplo:
 
 ```xbase
+static procedure Borrar()
+local lContinue := msgSN( "el socio: " + oRS:fieldGet( 2 ), ;
+                          "Realmente esta seguro de borrar" )
 
+if lContinue
+   id := oRS:fieldGet( 1 )
+   msgEspera()
+   oDelete:execute()
+   oRS:refresh()
+endif
+
+return
 ```
 
 
