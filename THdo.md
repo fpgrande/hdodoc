@@ -57,7 +57,8 @@ oDb:connect( _DB, _CONN )
   - Usuario que hace la conexión
   - Contraseña del usuario que hace la conexión
   - Puerto usado para la conexión
-  - 
+  - Socket
+  - Bandera 
 
 ##### Devuelve:
 
