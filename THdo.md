@@ -47,11 +47,16 @@ oDb:connect( _DB, _CONN )
 
 - *<_DB>* 
 
-  Gestor de base datos en el que tratará de hacer la conexión.
+  Base datos en el que tratará de hacer la conexión.
 
 - *<_CONN>* 
 
-  Cadena de conexión.
+  Cadena de conexión que lleva los siguientes datos: 
+  
+  - Dirección IP del servidor
+  - Usuario que hace la conexión
+  - Contraseña del usuario que hace la conexión
+  - 
 
 ##### Devuelve:
 
