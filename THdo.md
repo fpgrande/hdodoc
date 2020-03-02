@@ -43,7 +43,15 @@ oDb := THDO():new( _DBMS )
 
 oDb:connect( _DB, _CONN )
 
-##### Argumentos:
+##### **Argumentos:**
+
+- *<_DB>* 
+
+  Gestor de base datos en el que tratará de hacer la conexión.
+
+- *<_CONN>* 
+
+  Cadena de conexión.
 
 ##### Devuelve:
 
