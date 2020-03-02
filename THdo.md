@@ -56,15 +56,16 @@ oDb:connect( _DB, _CONN )
   - Dirección IP del servidor
   - Usuario que hace la conexión
   - Contraseña del usuario que hace la conexión
+  - Puerto usado para la conexión
   - 
 
 ##### Devuelve:
 
-Valor booleano con el resultado de la conexión.
+Valor lógico con el resultado de la conexión.
 
 ##### Descripción:
 
-Hace la conexión con la base de datos, hay bases de datos que no necesitan todos los parámetros por los que no habrá que pasarle ese parámetro o sencillamente el gestor de la base de datos los marginará.
+Hace la conexión con la base de datos, hay bases de datos que no necesitan todos los parámetros por los que no habrá que pasarle ese parámetro o sencillamente el gestor de la base de datos los ignorará.
 
 Por ejemplo SQLite solo necesita el nombre de la base de datos.
 
