@@ -171,6 +171,8 @@ oDb:exec( cCreaTabla )
 
 ##### Argumentos:
 
+Sentencia a ejecutar.
+
 ##### Devuelve:
 
 Un valor lógico con el resultado de la ejecución.
@@ -220,9 +222,15 @@ msg( _DB + " cerrada" )
 
 ##### Sintaxis:
 
+oDb:execDirect( _CREA_TB_IMG )
+
 ##### Argumentos:
 
+Sentencia a ejecutar.
+
 ##### Devuelve:
+
+Un valor lógico con el resultado de la ejecución.
 
 ##### Descripción:
 
