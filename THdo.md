@@ -173,7 +173,11 @@ oDb:exec( cCreaTabla )
 
 ##### Devuelve:
 
+Un valor lógico con el resultado de la ejecución.
+
 ##### Descripción:
+
+Ejecuta una sentencia que no devuelve un conjunto de filas.
 
 ##### Ejemplo:
 
