@@ -82,11 +82,19 @@ oDb:connect( _DB, _CONN )
 
 ##### Sintaxis:
 
+oDb:disconnect()
+
 ##### Argumentos:
+
+Sin parámetros.
 
 ##### Devuelve:
 
+Un valor lógico con el resultado de la desconexión.
+
 ##### Descripción:
+
+Desconecta y libera la memoria. Es una especie de destructor.
 
 ##### Ejemplo:
 
@@ -129,11 +137,19 @@ msg( _DB + " cerrada" )
 
 ##### Sintaxis:
 
+oCon:free()
+
 ##### Argumentos:
+
+Sin parámetros.
 
 ##### Devuelve:
 
+Un valor lógico con el resultado de la desconexión.
+
 ##### Descripción:
+
+Desconecta y libera la memoria. Es igual que el método **disconnect()**
 
 ##### Ejemplo:
 
@@ -150,6 +166,8 @@ oCon:free()
 #### exec()
 
 ##### Sintaxis:
+
+oDb:exec( cCreaTabla )
 
 ##### Argumentos:
 
